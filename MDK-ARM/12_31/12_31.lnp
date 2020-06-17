@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"12_31\startup_stm32f103xb.o"
+"12_31\main.o"
+"12_31\gpio.o"
+"12_31\sys.o"
+"12_31\tim.o"
+"12_31\usart.o"
+"12_31\stm32f1xx_it.o"
+"12_31\stm32f1xx_hal_msp.o"
+"12_31\stm32f1xx_hal_gpio_ex.o"
+"12_31\stm32f1xx_hal_tim.o"
+"12_31\stm32f1xx_hal_tim_ex.o"
+"12_31\stm32f1xx_hal.o"
+"12_31\stm32f1xx_hal_rcc.o"
+"12_31\stm32f1xx_hal_rcc_ex.o"
+"12_31\stm32f1xx_hal_gpio.o"
+"12_31\stm32f1xx_hal_dma.o"
+"12_31\stm32f1xx_hal_cortex.o"
+"12_31\stm32f1xx_hal_pwr.o"
+"12_31\stm32f1xx_hal_flash.o"
+"12_31\stm32f1xx_hal_flash_ex.o"
+"12_31\stm32f1xx_hal_exti.o"
+"12_31\stm32f1xx_hal_uart.o"
+"12_31\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "12_31\12_31.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "12_31.map" -o 12_31\12_31.axf
